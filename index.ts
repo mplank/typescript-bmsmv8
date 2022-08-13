@@ -4,10 +4,12 @@ import './style.css';
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
+const cropDiv: HTMLElement = document.getElementById('cropper');
 
-const crops = document.createElement('div');
-appDiv.append(crops);
-
-const cropper = new Cropper({ target: crops });
-
-console.log(cropper.getOptions());
+const cropper = new Cropper({
+  imageUrl: '/images/01.jpeg',
+  target: cropDiv,
+  width: 1330,
+  height: 333,
+  fitOnInit: true,
+});
