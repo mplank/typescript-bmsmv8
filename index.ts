@@ -7,7 +7,8 @@ const appDiv: HTMLElement = document.getElementById('app');
 const cropDiv: HTMLElement = document.getElementById('cropper');
 
 const cropper = new Cropper({
-  imageUrl: '/images/01.jpeg',
+  imageUrl:
+    'https://i.pinimg.com/originals/a5/13/a0/a513a04aa1f6a6ff689d2d71038d682a.jpg',
   target: cropDiv,
   width: 1330,
   height: 333,
